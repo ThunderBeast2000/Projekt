@@ -1,0 +1,35 @@
+h2{
+	text-align: center;
+	font-size: 24pt;
+}
+
+p{
+	text-align: justify;
+}
+
+.image{
+	text-align: center;
+}
+
+table{
+	border: 1px solid black;
+	width: 100%;
+	margin: 0px, 10px ;
+}
+
+td{
+	border: 1px solid black;
+}
+
+thead{
+	font-weight: bold;
+	text-align: center;
+}
+
+thead td{
+	padding: 5px 0px;
+}
+
+tbody tr td:last-child{
+	text-align: center;
+}
