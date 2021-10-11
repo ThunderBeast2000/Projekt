@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Csapatunk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .urlap {
+      font-size: x-large;
+      padding-left: 20px;
+    }
+
+    div.menu {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        width: 25px ;
+        right: 0;
+        float: left;
+        position:fixed;
+        bottom: 0;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        height: 25px;
+
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: rgb(139,0,0);
+      width: 100%;
+    }
+
+    .sor {
+      padding-left: 10px;
+    }
+    .row.content {
+      height: 450px;
+    }
+
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 150%;
+    }
+
+    
+    footer {
+      background-color:rgb(133, 4, 4);
+      color: rgb(63, 3, 3);
+      padding-left: 15px;    
+      width: 100%;
+      font-size: small;
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    #clock {
+      padding-top: 15%;
+      padding-bottom: 15%;
+      color: white;
+      font-size: large;
+      font-weight: bold;
+    }
+    .sidebarimg {
+      width: 100%;
+      border-radius: 10px;
+      /*A sidenavoknál a linkek képek legyenek, melyek class-ja ez*/
+    }
+    .login {
+    background-color: green;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    float: left;
+}
+label {
+  font-size: larger;
+  font-weight: bolder;
+}
+h1 {
+  font-weight: bolder;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a  href=""><img style="height: 50px;" src="Projektor.png" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style="color: white;">Főoldal
+        <li><a href="gallery.html" style="color: white;">Galéria</a></li>
+        <li><a href="covid.html" style="color: white;">A Lenovo álláspontja a COVID-19 kapcsán</a></li>
+        <li><a href="" style="background-color: rgb(175, 6, 6); color: white;">Kapcsolat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><div id="clock" >
+          10:10:01 
+        </div>
+        <script>
+          setInterval(displayclock, 500);
+          function displayclock () {
+            var time = new Date();
+            var hrs = time.getHours();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 24) {
+              hrs = 0 ;
+            }
+            
+            if (hrs < 10) {
+              hrs = '0' + hrs;
+            }
+
+            if (min < 10) {
+              min = '0' + min;
+            }
+
+            if (sec < 10) {
+              sec = '0' + sec;
+            }
+
+            document.getElementById ('clock').innerHTML = hrs + ':' + min + ':' + sec;
+          }
+        </script></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    
+    
+    <div class="col-sm-8 text-left"> 
+      <h1>Légy csapatunk tagja!</h1>
+      <br>
+      <h3>Hogy miért légy közülünk való?</h3>
+      <ul>
+        <li><p>Csapatunk csak a legképzetteb szakemberekből áll, kik bármikor szívesen segítenek neked!</p></li>
+        <li><p>Nálunk a jó fizetés, a rendes főnök és a jó arc kollega alap ;)</p></li>
+        <li><p>Nekünk mindig mások érdeke az első.</p></li>
+      </ul>
+      <br>
+      <h3>Hogy mit kell tenned?</h3>
+      <br>
+      <ol>
+        <li><p>Csupán annyit, hogy kitöltöd a következő űrlapot.</p></li>
+        <li><p>Ha ez kész, kattints a <i style="color: green;">küldés</i> gombra.</p></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<form class="urlap">
+  <div class="sor">
+   <div class="oszlop25">
+       <label for="keresztnev">Keresztneved::</label>
+   </div>
+   <div class="oszlop75">
+       <input type="text" id="keresztnev" name="keresztnev" placeholder="Firstname">
+   </div>
+  </div>
+  <div class="sor">
+   <div class="oszlop25">
+       <label for="vezeteknev">Vezetékneved:</label>
+   </div>
+   <div class="oszlop75">
+       <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Surname">
+   </div>
+   <br>
+   <div class="sor">
+      <a class="login" href="succes.html">Küldés</a>
+  </div>
+</form>
+<div class="container-fluid text-center"><br><br></div>
+<br>
+<h3>Csapatunk legjobbjai:</h3>
+<br>
+<ul>
+  <li><p>Hruska Judit</p></li>
+  <li><p>Gadnai Geminián(Dávid)</p></li>
+  <li><p>Hürkecz Attila</p></li>
+  <li><p>Gazdóf Ferenc</p></li>
+</ul>
+<footer class="container-fluid text-left">
+  <p>ProjekTor inc. <br> All rights reserved® <br> <a href="tel:+36303947759">Tel.: 06-30-39-47-759 </a></p>
+</footer>
+</body>
+</html>
