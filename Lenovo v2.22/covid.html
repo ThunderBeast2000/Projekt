@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projektor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+    div.menu {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        width: 25px ;
+        right: 0;
+        float: left;
+        position:fixed;
+        bottom: 0;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        
+        height: 25px;
+    
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: rgb(139,0,0);
+      width: 100%;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 32a0px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 250%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color:rgb(133, 4, 4);
+      color: rgb(93, 93, 93);
+      padding: 15px;    
+      width: 100%;
+      bottom: 0;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    #clock {
+      padding-top: 15%;
+      padding-bottom: 15%;
+      color: white;
+      font-size: large;
+      font-weight: bold;
+    }
+    .sidebarimg {
+      width: 100%;
+      border-radius: 10px;
+      /*A sidenavoknál a linkek képek legyenek, melyek class-ja ez*/
+    }
+
+    p {
+        font-size: large;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a  href=""><img style="height: 50px;" src="Projektor.png" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style="color: white;" >Főoldal</a></li>
+        <li><a href="gallery.html" style="color: white;">Galéria</a></li>
+        <li><a href="" style="background-color: rgb(175, 6, 6); color: white;">A Lenovo álláspontja a COVID-19 kapcsán</a></li>
+        <li><a href="contact.html" style="color: white;">Kapcsolat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><div id="clock" >
+          10:10:01 
+        </div>
+        <script>
+          setInterval(displayclock, 500);
+          function displayclock () {
+            var time = new Date();
+            var hrs = time.getHours();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+
+            if (hrs > 24) {
+              hrs = 0 ;
+            }
+
+            if (hrs < 10) {
+              hrs = '0' + hrs;
+            }
+
+            if (min < 10) {
+              min = '0' + min;
+            }
+
+            if (sec < 10) {
+              sec = '0' + sec;
+            }
+
+            document.getElementById ('clock').innerHTML = hrs + ':' + min + ':' + sec;
+          }
+        </script></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-1 sidenav">
+      
+      <p><a href="https://www.lenovo.com/hu/hu/lenovo-responds-covid-19/" target="blank"><img src="https://cdn.discordapp.com/attachments/888479343699976244/894668356974686228/2Q.png" alt="" class="sidebarimg"></a></p>
+      <p><a href="https://c.tenor.com/_ha2H2_hlhEAAAAM/wazowski-mike.gif" target="blank"><img src="https://cdn.discordapp.com/attachments/825800125220782102/896850194904268840/unknown.png" alt=""></a></p>
+    </div>
+    <div class="col-sm-10 text-left"> 
+      <h1>A Lenovo álláspontja a COVID-19 kapcsán</h1>
+      <h3>Yuanqing Yang ügyvezető igazgató üzenete</h3>
+      <p>A COVID-19 terjedése az elmúlt két hónapban továbbra is hatással van mindannyiunkra. Habár néhány országban már újranyitottuk az irodáinkat, a világ más részein a kollégáinkat továbbra is arra kérjük, hogy dolgozzanak otthonról - ez a helyzet arra figyelmeztet bennünket, hogy egy folyamatosan változó, egész világot érintő helyzettel van dolgunk, amellyel szemben közös összefogásra van szükség, hogy legyőzzük és továbblépjünk.</p>
+
+      <p>A Lenovonál mi minden nap azért dolgozunk, hogy mindenki számára okosabb technológiákat tudjunk nyújtani. Ez abból a hitből származik, mely szerint minél több ember kezébe adunk okos technológiát, annál több megoldás születik az egész emberiséget érintő kihívásokra. Manapság pedig jobban látjuk, mint bármikor, hogy mekkora értéke van a megfelelő technológiának, legyen az egy kutatóorvos kezében, aki egy vakcinán dolgozik, egy tanárnál, aki online órát tart, vagy éppen bárkinél, aki otthonról dolgozik az internet segítségével. A közeljövőben a technológia kulcsszerepet fog játszani azokban a kihívásokban, amelyeket a vírus állít elénk. Mi továbbra is keményen dolgozunk azon, hogy olyan termékeket fejlesszünk, melyeket az ügyfeleink azért használnak, hogy legyőzzék a velük szemben álló nehézségeket.</p>
+        
+        <p>Ugyanakkor az emberek azok, akik kulcsfontosságúak a kihívásokra adott megoldások megtalálásában. A Lenovo számára mindig az emberek voltak a legfontosabbak, legyenek ők a munkavállalóink, partnereink, ügyfeleink vagy közösségeink. Ezen elv mentén hozva meg döntéseinket, szeretném Önöket tájékoztatni azokról a lépésekről, melyekkel az embereket igyekszünk szolgálni.</p>
+      <hr>
+      <h4>További információért kattintson a képre.</h4>
+      <br>
+    </div>
+   
+  </div>
+</div>
+<div class="menu">
+  
+</div>
+
+
+
+<footer class="container-fluid text-left">
+  <p>ProjekTor inc. <br> All rights reserved® <br> <a href="tel:+36303947759">Tel.: 06-30-39-47-759 </a></p>
+</footer>
+
+
+</body>
+</html>
