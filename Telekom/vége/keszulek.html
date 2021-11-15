@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Készülékeink</title>
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/818763136483065866/905513440632774696/tkom.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: white;
+      border: none;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #bd0771;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  .reklama {
+    height: 50%; 
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  } 
+
+  .price {
+    color: magenta;
+    text-shadow: black;
+  }
+  .brand {
+    color: black;
+    font-weight:bold;
+  }
+
+  #cim{
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(207, 5, 207, 0.329);
+  }
+
+  li:hover{
+    background-color: rgba(255, 0, 255, 0.418);
+  }
+
+  .row.content{height: 100%}
+
+  </style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+    
+    .body {
+        font-family: "Poppins", sans-serif;
+        color: #444444;
+    }
+    
+    a,
+    a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .section-products {
+        height: 50px;
+    }
+    
+    .section-products .header {
+        margin-bottom: 100px;
+        padding-left: 55px;
+        
+    }
+
+    .section-products .gr {
+        margin-bottom: 100px;
+        padding-left: 35px;
+        
+    }
+    
+    
+    .section-products .header h3 {
+        font-size: 3rem;
+        color: magenta;
+        font-weight: 500;
+    }
+
+    .nowrap {
+        white-space: nowrap;
+    }
+    
+    .section-products .header h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgba(255, 0, 255, 0.418); 
+    }
+    
+    .section-products .single-product {
+        margin-bottom: 26px;
+        width: 100%;
+    }
+    
+    .section-products .single-product .part-1 {
+        position: relative;
+        height: 450px;
+        max-height: 450px;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    .section-roducts .single-product .part-2 {
+        height: 450px;
+        max-height: 450px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        width: 100%;
+    } 
+
+    .header {
+        margin-left: 400px;
+    }
+    
+    .section-products .single-product .part-1::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: all 0.3s;
+    }
+    
+    .section-products .single-product:hover .part-1::before {
+            transform: scale(1.2,1.2) rotate(5deg);
+    }
+    
+    .section-products #product-1 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887032407117824/SAM_GAL_A12_DS_64GB__EX__BK_01_400.png") no-repeat center;
+        background-size: 100%;
+            transition: all 0.3s;
+    }
+    
+    .section-products #product-2 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887030167339048/IPHONE_13_128GB__RED_01_400.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .section-products #product-3 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887038509842462/XIAOMI_RMI_9T_DS_4_128GB_GN_01_400.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .section-products #product-4 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887033745088562/SAM_GAL_A52S_5GDS_128GB_BLK_01_400.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .section-products #product-5 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887036995694592/XIA_11T_PRO_DS5G_256GB__BLU_01_400.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .section-products #product-6 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887029135544382/IPHONE_12_64GB__WHT_01_400.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .section-products #product-7 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887031312416798/SAM_A22_5G_DS_4_128GB__WHT_01_400.png") no-repeat center;
+        background-size: 100%;
+
+    }
+    
+    .section-products #product-8 .part-1::before {
+        background: url("https://cdn.discordapp.com/attachments/559318435486760960/905887035607359508/SAM_GAL_S21_DS_128GB_5G_GRY_01_400.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .section-products .single-product .part-1 .discount,
+    .section-products .single-product .part-1 .new {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        color: #ffffff;
+        background-color: magenta;
+        padding: 2px 8px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+    }
+    
+    .section-products .single-product .part-1 .new {
+        left: 0;
+        background-color: #444444;
+    }
+    
+    .section-products .single-product .part-1 ul {
+        position: relative;
+        bottom: -41px;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        opacity: 0;
+        transition: bottom 0.5s, opacity 0.5s;
+    }
+    
+    .section-products .single-product:hover .part-1 ul {
+        bottom: 30px;
+        opacity: 1;
+    }
+    
+    .section-products .single-product .part-1 ul li {
+        display: inline-block;
+        margin-right: 4px;
+    }
+    
+    .section-products .single-product .part-1 ul li a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #ffffff;
+        color: #bd0771;
+        text-align: center;
+        box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+        transition: color 0.2s;
+    }
+    
+    .section-products .single-product .part-1 ul li a:hover {
+        color: #bd0771;
+    }
+    
+    .section-products .single-product .part-2 .product-title {
+        font-size: 2rem;
+    }
+    
+    .section-products .single-product .part-2 h4 {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    
+    .section-products .single-product .part-2 .product-old-price {
+        position: relative;
+        padding: 0 7px;
+        margin-right: 2px;
+        opacity: 0.6;
+    }
+    
+    .section-products .single-product .part-2 .product-old-price::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #bd0771;
+        transform: translateY(-50%);
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <div style="width: 100%; background-color: white;"><a href="https://www.telekom.hu/lakossagi" target="_blank"><img style="padding-left: 50pt;" src="https://cdn.discordapp.com/attachments/818763136483065866/905839479858798633/tejekom.png" alt=""></a></div>        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a style="color: magenta; font-weight: bold;" href="main.html">Home</a></li>
+            <li><a style="color: magenta; font-weight: bold;" href="szolgaltatas.html">Szolgáltatások</a></li>
+            <li class="active"><a style="background-color: rgba(255, 0, 255, 0.418); font-weight: bold;" href="#"> Készülékeink</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row content">
+        <section class="section-products">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="header">
+                        <span class="nowrap">
+                        <h3>Válassz készüléket!</h3></span>
+                        <div class="gr">
+                        <span class="nowrap">
+                        <h2>Népszerű termékeink</h2></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-1" class="single-product">
+                        <div class="part-1">
+                        </div>
+                        <div class="part-2">
+
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/Samsung-Galaxy-A12-4~64-GB-Dual-SIM-Exynos?skuId=jsku1754641053" target="_blank">Samsung Galaxy A12 4+64 GB Dual SIM Exynos</h3></a>
+                            <h4 class="product-old-price">54 780 Ft</h4>
+                            <h4 class="product-price">34 320 Ft</h4>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-2" class="single-product">
+                        <div class="part-1">
+                            <span class="discount">15% kedvezmény</span>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/Apple-iPhone-13?skuId=jsku1754642394" target="_blank">Apple iPhone 13</h3></a>
+                            <h4 class="product-price">314 380 Ft</h4>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-3" class="single-product">
+                        <div class="part-1">
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/XIAOMI-REDMI-9T-Dual-Sim-4~128-GB?skuId=jsku1754638515" target="_blank">XIAOMI REDMI 9T Dual Sim 4+128 GB</h3>
+                            <h4 class="product-old-price">78 540 Ft</h4>
+                            <h4 class="product-price">58 080 Ft</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-4" class="single-product">
+                        <div class="part-1">
+                            <span class="new">Neked ajánljuk</span>
+                            <ul>
+                        </div>
+                        <div class="part-2">
+                            <div class="kh">
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/Samsung-Galaxy-A52S-5G-6~128-GB-Dual-SIM?skuId=jsku1754641285" target="_blank">Samsung Galaxy A52S 5G 6+128 GB Dual SIM</h3></a>
+                            <h4 class="product-price">129 360</h4>
+                        </div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-5" class="single-product">
+                        <div class="part-1">
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/Xiaomi-11T-Pro-Dual-Sim-5G?skuId=jsku1754641351" target="_blank">Xiaomi 11T Pro Dual Sim 5G</h3></a>
+                            <h4 class="product-old-price">239 800 Ft</h4>
+                            <h4 class="product-price">219 340 Ft</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-6" class="single-product">
+                        <div class="part-1">
+                            <span class="discount">15% kedvezmény</span>
+                            <ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/Apple-iPhone-12?skuId=jsku1754637171" target="_blank">Apple iPhone 12</h3></a>
+                            <h4 class="product-price">279 400 Ft</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-7" class="single-product">
+                        <div class="part-1">
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/Samsung-Galaxy-A22-5G-Dual-Sim?skuId=jsku1754640577" target="_blank">Samsung Galaxy A22 5G Dual Sim</h3></a>
+                            <h4 class="product-old-price">88 440 Ft</h4>
+                            <h4 class="product-price">67 980 Ft</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="row justify-content-center text-center">
+                    <div id="product-8" class="single-product">
+                        <div class="part-1">
+                            <span class="new">Neked ajánljuk</span>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title"><a href="https://www.telekom.hu/webshop/termek/Samsung-Galaxy-S21-5G-Dual-SIM?skuId=jsku1754637889" target="_blank">Samsung Galaxy S21 5G Dual SIM</h3></a>
+                            <h4 class="product-price">229 460 Ft</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <footer style="width: 100% ; color: white ;" class="container-fluid text-left">
+        <p>ProjekTor inc. <br> All rights reserved® <br> <a href="tel:+36303947759">Tel.: 06-30-39-47-759 </a></p>
+      </footer>
+</body>
+</html>

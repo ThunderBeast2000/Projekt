@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Szolgáltatások</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/818763136483065866/905513440632774696/tkom.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .flex-container {
+      display: flex;
+      height: 160px;
+      align-items: center;
+      color: white;
+    }
+
+    body {
+      background-image: url("https://cdn.discordapp.com/attachments/527198810074775583/905918086836801577/8.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 250px;
+    }
+
+    .szin, .szin:hover, .szin:visited, .szin:active {
+      color: #ed008c;
+      text-decoration: none;
+    }
+
+    .kep {
+      width: clamp(100px, 10%, 200px)
+    }
+
+    .doboz {
+      background-color: lightgray;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: white;
+      border: none;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #bd0771;
+      padding: 25px;
+    }
+    footer {
+      position: fixed;
+      height: 100px;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+    }
+
+    .reklama {
+      height: 50%; 
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    } 
+
+    .price {
+      color: magenta;
+      text-shadow: black;
+    }
+    .brand {
+      color: black;
+      font-weight:bold;
+    }
+
+    #cim{
+      color: black;
+      font-weight: bold;
+      width: 100%;
+      background-color: rgba(207, 5, 207, 0.329);
+    }
+
+    li:hover{
+      background-color: rgba(255, 0, 255, 0.418);
+    }
+
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+    
+    .body {
+      font-family: 'Poppins', sans-serif;
+      color: #444444;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <div style="width: 100%; background-color: white;"><a href="https://www.telekom.hu/lakossagi" target="_blank"><img style="padding-left: 50pt;" src="https://cdn.discordapp.com/attachments/818763136483065866/905839479858798633/tejekom.png" alt=""></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a style="color: magenta; font-weight: bold;" href="main.html">Home</a></li>
+            <li class="active"><a style="background-color: rgba(255, 0, 255, 0.418); font-weight: bold;" href="#">Szolgáltatások</a></li>
+            <li><a style="color: magenta; font-weight: bold;" href="keszulek.html">Készülékeink</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="height: 250px;"><h1 class="flex-container">Mobilinternet és mobilhálózat</h1></div>
+    <div class="container" style="text-align: center;">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="kep" src="https://cdn.discordapp.com/attachments/527198810074775583/905908124962136084/1.png" alt="">
+          <h3>Havi díjas mobilinternet-díjcsomagok</h3>
+          <p>4G sebességgel, akár az EU-ban is használhatod.</p>
+          <div style="text-align: left;">
+            <ul>
+              <li>4 GB mobilnet csomag</li>
+              <li>8 GB mobilnet csomag</li>
+              <li>25 GB mobilnet csomag</li>
+              <li>Korlátlan Gigaerős Net mobilnet csomag</li>
+              <li>Korlátlan Gigaerős Net+ mobilnet csomag</li>
+            </ul>
+          </div>
+          <br><br>
+          <a class="szin" href="https://www.telekom.hu/webshop/szolgaltatasok/mobil">További részletek</a><br>
+        </div>
+        <div class="col-sm-3">
+          <img class="kep" src="https://cdn.discordapp.com/attachments/527198810074775583/905908133090693220/2.png" alt="">
+          <h3>Domino feltöltőkártyás net bővítők</h3>
+          <p>4G sebességgel, országszerte.</p><br>
+          <div style="text-align: left;">
+            <ul>
+              <li>Egyszeri 2 GB 1 napra</li>
+              <li>Egyszeri 6 GB 3 napra</li>
+              <li>Egyszeri korlátlan net 2 napra</li>
+              <li>Egyszeri korlátlan net 6 napra</li>
+              <li>Maraton 1 GB</li>
+              <li>Maraton 5 GB</li>
+              <li>Megújuló net 1 GB</li>
+              <li>Megújuló net 15 GB</li>
+              <li>Megújuló korlátlan net 30 napra</li>
+            </ul>
+          </div>
+          <a class="szin" href="https://www.telekom.hu/lakossagi/szolgaltatasok/internet/mobilinternet/domino-mobilinternet-csomagok">További részletek</a><br>
+        </div>
+        <div class="col-sm-3">
+          <img class="kep" src="https://cdn.discordapp.com/attachments/527198810074775583/905908141097644042/3.png" alt="">
+          <h3>Havi díjas mobilhálózat-díjcsomagok</h3>
+          <p>Állítsd össze a neked tetsző díjcsomagot! Válassz hangot és netet igény szerint</p>
+          <div style="text-align: left;">
+            <ul>
+              <li>Mobil XS díjcsomag</li>
+              <li>Mobil S díjcsomag</li>
+              <li>Mobil M díjcsomag</li>
+              <li>Mobil L díjcsomag</li>
+              <li>Mobil XL díjcsomag</li>
+            </ul>
+          </div>
+          <br><br><br><br>
+          <a class="szin" href="https://www.telekom.hu/webshop/szolgaltatasok/mobil">További részletek</a><br>
+        </div>
+        <div class="col-sm-3">
+          <img class="kep" src="https://cdn.discordapp.com/attachments/527198810074775583/905908148370538527/4.png" alt="">
+          <h3>Domino feltöltőkártyás díjcsomag</h3>
+          <p>Dominósként Te döntöd el, hogy mennyi idő alatt használod fel a Maraton net bővítőt. Sőt, választhatsz Egyszeri vagy Megújuló net bővítők közül is!</p>
+          <div style="text-align: left;">
+            <ul>
+              <li>25 Ft / perc és SMS</li>
+              <li>80 perc és 1GB ajándék</li>
+            </ul>
+          </div>
+          <br><br><br><br><br>
+          <a class="szin" href="https://www.telekom.hu/lakossagi/szolgaltatasok/mobil/domino-dijcsomagok">További részletek</a><br>
+        </div>
+      </div>
+      <div class="container" style="height: 100px;"></div>
+    </div>
+    
+    <footer style="width: 100% ; color: white;" class="container-fluid text-left">
+        <p>ProjekTor inc. <br> All rights reserved® <br> <a style="color: white;" href="tel:+36303947759">Tel.: 06-30-39-47-759 </a></p>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>index.html</title>
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/818763136483065866/905513440632774696/tkom.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: white;
+      border: none;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #bd0771;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  .reklama {
+    height: 50%; 
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  } 
+
+  .price {
+    color: magenta;
+    text-shadow: black;
+  }
+  .brand {
+    color: black;
+    font-weight:bold;
+  }
+
+  #cim{
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(207, 5, 207, 0.329);
+  }
+
+  li:hover{
+    background-color: rgba(255, 0, 255, 0.418);
+  }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a style="background-color: rgba(255, 0, 255, 0.418); font-weight: bold;"  href="#">Home</a></li>
+        <li><a style="color: magenta; font-weight: bold;" href="about.html">About</a></li>
+        <li><a style="color: magenta; font-weight: bold;" href="szolgaltatas.html">Szolgáltatások</a></li>
+        <li><a style="color: magenta; font-weight: bold;" href="keszulek.html">Készülékeink</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" >
+        <img src="https://zikol.com.mk/web/wp-content/uploads/zikol_preporaki_logoa_t-home.jpg" alt="Image" style="height: 600px; width: 600px">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item" > 
+       <a target="_blank" href="https://www.telekom.hu/shop/termek/Apple+iPhone+12--IPHONE+12+64GB++BLK?sku=jsku1754637171&contractType=newPostpaid&paymentType=INSTALLMENT&preselectedTariffplanBundleSkuId=sku3550020"><img src="https://istyle.hu/media/catalog/product/i/p/iphone-12-select-2020.jpg" alt="Image" style="height: 600px; width: 600px"></a>
+        <div class="carousel-caption">
+          <h3 class="price">100.000.000$</h3>
+          <p class="brand">Ájfóntizenkettőüpró</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3 id="cim">Híreink</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <a target="_blank" href="https://www.youtube.com/watch?v=oG10GfqX6Dw&ab_channel=AppleExplained"><img src="https://i1.wp.com/www.nashvillechatterclass.com/wp-content/uploads/2016/03/apple-car.jpg" class="img-responsive" style="width:100%" alt="Apple Car"></a>
+      <p>Current Project</p>
+    </div>
+    <div class="col-sm-4"> 
+      <a target="_blank" href="https://hu-hu.facebook.com/csaticsemegesajoszoged/posts/1073236586112871/"><img src="https://static.magyarhirlap.hu/images/202010/md/jakab-krumpli.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+      <p>A hónap dolgozója</p>    
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+      <p>Sometext</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<footer style="width: 100% ; color: white;" class="container-fluid text-left">
+  <p>ProjekTor inc. <br> All rights reserved® <br> <a href="tel:+36303947759">Tel.: 06-30-39-47-759 </a></p>
+</footer>
+
+</body>
+</html>
