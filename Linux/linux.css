@@ -1,0 +1,82 @@
+body {
+    max-width: 100%;
+}
+
+p{
+    font-family: 'League Gothic', sans-serif;
+    font-size: xx-large;
+    
+}
+
+h1#indeksz {
+    text-align: center;
+    font-size: 500%;
+    font-weight: bold;
+}
+img#indeksz {
+    height: 40%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+button {
+    border-radius: 30px;
+    padding: 1%;
+    color: black;
+    background-color: orange;
+}
+
+.reverse {
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+span{
+    display: Inline-block;
+}
+
+div {
+    height: 5%;
+    width: 100%;
+    background-color: orange;
+    position: relative;
+    vertical-align: top;
+    vertical-align: 0%;
+    font-family: 'Fasthand';
+}
+
+a {
+    color: black;
+}
+
+.xd {
+    color: red;
+    text-align: end;
+    vertical-align: top;
+}
+
+.cim {
+    width: 75%; 
+    background-color: orange;
+    border-end-end-radius: 25px;
+}
+
+.kep {
+    width: 25%;
+    height: auto;
+}
+
+
+
+
+

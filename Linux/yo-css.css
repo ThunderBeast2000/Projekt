@@ -1,0 +1,86 @@
+p{
+    font-family: 'League Gothic', sans-serif;
+    font-size: xx-large;
+    
+}
+
+p#szoveg {
+    font-family: 'League Gothic', sans-serif;
+    font-size: x-large;
+    
+}
+
+p#szoveg2 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: x-large;
+    
+}
+
+p#szoveg3 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: x-large;
+    
+}
+
+p#szoveg4 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: x-large;
+    
+}
+
+h1#indeksz {
+    text-align: center;
+    font-size: 500%;
+    font-weight: bold;
+}
+img#indeksz {
+    height: auto;
+    width: auto;
+    margin-left: 89%;
+    margin-right: 0;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+button {
+    border-radius: 30px;
+    padding: 1%;
+    color: black;
+    background-color: orange;
+}
+
+.reverse {
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+span{
+    display: Inline-block;
+}
+
+div {
+    height: 5%;
+    width: 100%;
+    background-color: orange;
+    position: relative;
+    vertical-align: top;
+    vertical-align: 0%;
+    font-family: 'Fasthand';
+}
+
+a {
+    color: black;
+}
+
+.xd {
+    color: red;
+    text-align: end;
+    vertical-align: top;
+}

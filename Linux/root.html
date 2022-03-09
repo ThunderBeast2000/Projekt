@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/905526352873152553/951219964898054204/leleszico.ico">
+    <link rel="stylesheet" href="yo-css.css">
+    <meta charset="UTF-8">  
+    <title>Root parancsok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+   </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <p class="xd">A 10.c nem ússza meg</p>
+            <h1 style="font-size: 300%;">Lelesz & <span class="reverse">Lelesz</span> Bt.</h1>
+        </div>
+      </div>
+    </nav>
+    
+        <h1 id="indeksz">Root számára elérhető parancsok</h1>
+        <br><br>
+        <p id="szoveg">Minden Linux rendszeren a root egy speciális felhasználó rendszergazdai jogokkal. Számos feladathoz rootként kell bejelentkezni (vagy parancsokat végrehajtani root jogosultságokkal).</p>
+        <br>
+        <p id="szoveg2">Létezik egy speciális su nevű parancs (a „super user” vagy „switch user”), amely lehetővé teszi a parancsok ideiglenes futtatását rootként.</p>
+        <br>
+        <p id="szoveg3">Lehetséges és gyakran előnyösebb, ha a parancsokat rootként futtatja anélkül, hogy bejelentkezne a root fiókba a sudo paranccsal, amely a "superuser do" rövidítése. Ha egy parancsot a sudo előtaggal rögzít, akkor a rendszer kéri a jelszavát (nem a root jelszót), és a neve egy speciális, sudoers nevű fájlba kerül. Ha a fiókja szerepel ott, a parancs root jogosultságokkal fut.</p>
+        <br>
+        <p id="szoveg4">Ha hozzá kell adni egy felhasználót a sudoers listához, használja a visudo parancsot, amelynek futtatásához root jogosultság szükséges, és amely lehetővé teszi az érzékeny sudoers fájl biztonságos szerkesztését.</p>
+        <br>
+        <p>Parancsok <a style="color: black;" href="directory.html"><button>Könyvtárakra</button></a>, <a style="color: black;" href="file_commands.html"><Button>Fileokra</Button></a> vonatkozóan.</p>
+        <a href="index.html"><img src="https://cdn.discordapp.com/attachments/760194916205985875/951212942261633074/unknown.png" alt="" id="indeksz"></a>
+    </body>
+</html>
